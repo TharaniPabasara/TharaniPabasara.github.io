@@ -5,221 +5,167 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body { font-family: 'Source Sans Pro', sans-serif; background: #f4f4f6; color: #444; margin: 0; padding: 0; display: flex; }
+			#header { width: 300px; background: #222629; color: #fff; height: 100vh; position: fixed; top: 0; left: 0; display: flex; flex-direction: column; justify-content: space-between; padding: 40px 25px; box-sizing: border-box; }
+			#logo h1 { font-size: 1.5em; margin: 0 0 5px 0; color: #fff; font-weight: 400; }
+			#logo p { font-size: 0.85em; color: #86c232; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
+			#nav ul { list-style: none; padding: 0; margin: 50px 0 0 0; }
+			#nav ul li a { display: block; padding: 12px 15px; color: #a3a7a6; text-decoration: none; border-radius: 4px; font-size: 0.95em; transition: 0.2s; }
+			#nav ul li a:hover { background: #2c3033; color: #fff; }
+			.icons { list-style: none; padding: 0; margin: 0; display: flex; gap: 15px; }
+			.icons li a { color: #616668; text-decoration: none; font-size: 1.2em; transition: 0.2s; }
+			.icons li a:hover { color: #86c232; }
+			#main { margin-left: 300px; width: calc(100% - 300px); box-sizing: border-box; }
+			section { padding: 80px 10%; border-bottom: 1px solid #e5e5e5; box-sizing: border-box; }
+			.dark.cover { background: #474b4f; color: #fff; min-height: 70vh; display: flex; align-items: center; }
+			.dark h2 strong { color: #86c232; }
+			h2 { font-size: 2em; color: #222629; margin-bottom: 20px; font-weight: 400; }
+			p { line-height: 1.8; color: #616668; font-size: 1.05em; }
+			.dark p { color: #cbd0d0; }
+			.row { display: flex; flex-wrap: wrap; gap: 30px; margin-top: 35px; }
+			.col-4 { flex: 1; min-width: 250px; }
+			.col-6 { flex: 1; min-width: 300px; }
+			.item { background: #fff; padding: 25px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); border-top: 4px solid #86c232; }
+			.item h3 { margin-top: 0; color: #222629; font-size: 1.2em; }
+			.inner-box { background: #f8f9fa; padding: 20px; border-radius: 6px; border-left: 4px solid #474b4f; }
+			.inner-box h3 { margin-top: 0; color: #222629; }
+			ul { line-height: 1.8; color: #616668; }
+			a { color: #86c232; text-decoration: none; font-weight: bold; }
+			a:hover { text-decoration: underline; }
+			.button { display: inline-block; background: #86c232; color: #fff; padding: 12px 30px; text-decoration: none; border-radius: 4px; font-weight: 600; margin-top: 20px; transition: 0.2s; }
+			.button:hover { background: #61892f; text-decoration: none; }
+			@media (max-width: 980px) {
+				body { flex-direction: column; }
+				#header { width: 100%; height: auto; position: relative; padding: 25px; }
+				#nav ul { display: flex; flex-wrap: wrap; margin-top: 15px; gap: 5px; }
+				#nav ul li a { padding: 8px 12px; }
+				#main { margin-left: 0; width: 100%; }
+				section { padding: 50px 5%; }
+			}
+		</style>
 	</head>
-	<body class="is-preload">
+	<body>
 
 		<div id="header">
-
-				<div class="top">
-
-					<div id="logo">
-							<h1 id="title">Tharani Pabasara</h1>
-							<p>Field Biologist & Naturalist</p>
-						</div>
-
-					<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#skills" id="skills-link"><span class="icon fa-th">Field Skills</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon fa-flask">Research & Projects</span></a></li>
-								<li><a href="#leadership" id="leadership-link"><span class="icon fa-trophy">Leadership & Sports</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-
+			<div class="top">
+				<div id="logo">
+					<h1 id="title">Tharani Pabasara</h1>
+					<p>Field Biologist & Naturalist</p>
 				</div>
-
-				<div class="bottom">
-
-					<ul class="icons">
-							<li><a href="mailto:pabasaratharani@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="https://www.linkedin.com/in/tharani-pabasara" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						</ul>
-
-				</div>
-
+				<nav id="nav">
+					<ul>
+						<li><a href="#top"><i class="fa fa-home"></i> Intro</a></li>
+						<li><a href="#skills"><i class="fa fa-th"></i> Field Skills</a></li>
+						<li><a href="#portfolio"><i class="fa fa-flask"></i> Research</a></li>
+						<li><a href="#leadership"><i class="fa fa-trophy"></i> Leadership & Sports</a></li>
+						<li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+					</ul>
+				</nav>
 			</div>
+			<div class="bottom">
+				<ul class="icons">
+					<li><a href="mailto:pabasaratharani@gmail.com"><i class="fa fa-envelope"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/tharani-pabasara" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
 
 		<div id="main">
 
-				<section id="top" class="one dark cover">
-						<div class="container">
+			<section id="top" class="dark cover">
+				<div>
+					<h2 style="color:#fff;">Hi! I'm <strong>Tharani Pabasara</strong></h2>
+					<p>A dedicated undergraduate passionate about wildlife observation, biodiversity studies, and field-based ecological research at Rajarata University of Sri Lanka.</p>
+					<p>Actively engaged in hiking and outdoor exploration with developing skills in species identification and ecological surveying. Eager to work as a naturalist, contributing to conservation-focused fieldwork, biodiversity monitoring, and nature interpretation.</p>
+					<a href="#portfolio" class="button">View My Research</a>
+				</div>
+			</section>
 
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Tharani Pabasara</strong></h2>
-								<p>A dedicated undergraduate passionate about wildlife observation, biodiversity studies,<br />
-								and field-based ecological research at Rajarata University of Sri Lanka.</p>
-							</header>
-
-							<p>Actively engaged in hiking and outdoor exploration with developing skills in species identification and ecological surveying. Eager to work as a naturalist, contributing to conservation-focused fieldwork, biodiversity monitoring, and nature interpretation while gaining research experience.</p>
-
-							<footer>
-								<a href="#portfolio" class="button scrolly">View My Research</a>
-							</footer>
-
+			<section id="skills">
+				<h2>Field & Technical Skills</h2>
+				<p>Equipped with hands-on training in field techniques and laboratory diagnostics tailored for ecological conservation:</p>
+				<div class="row">
+					<div class="col-4">
+						<div class="item">
+							<h3>🔬 Ecological Surveying</h3>
+							<p>Line transects, quadrat sampling, animal sampling techniques, and population estimation parameters.</p>
 						</div>
-					</section>
-
-				<section id="skills" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Field & Technical Skills</h2>
-							</header>
-
-							<p>Equipped with hands-on training in field techniques and laboratory diagnostics tailored for ecological conservation:</p>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item" style="margin-bottom: 15px;">
-										<header>
-											<h3>🔬 Ecological Surveying</h3>
-											<p>Line transects, quadrat sampling, animal sampling techniques, and population estimation.</p>
-										</header>
-									</article>
-									<article class="item">
-										<header>
-											<h3>📸 Wildlife Monitoring</h3>
-											<p>Camera trapping, bird watching programs, live trapping (rodents/bats), and safe handling techniques.</p>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item" style="margin-bottom: 15px;">
-										<header>
-											<h3>🦋 Entomology & Botany</h3>
-											<p>Entomological field sampling, insect identification, and preparing herbarium sheets.</p>
-										</header>
-									</article>
-									<article class="item">
-										<header>
-											<h3>🧪 Lab & Taxidermy</h3>
-											<p>Taxidermy of larger mammals (fishing cat stuffing), skeleton preparation (Indian star tortoise), and mosquito larval identification.</p>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<header>
-											<h3>🗺️ Field Familiarity</h3>
-											<p>Extensive field site exposure including Knuckles Range, Horton Plains, Trincomalee mangroves, and Mannar Wind Power Plant.</p>
-										</header>
-									</article>
-								</div>
-							</div>
-
+					</div>
+					<div class="col-4">
+						<div class="item">
+							<h3>📸 Wildlife Monitoring</h3>
+							<p>Camera trapping, systematic bird watching programs, live trapping (rodents/bats), and safe handling techniques.</p>
 						</div>
-					</section>
-
-				<section id="portfolio" class="three">
-						<div class="container">
-
-							<header>
-								<h2>Research & Academic Projects</h2>
-							</header>
-
-							<p>A summary of research projects, field presentations, and technical evaluations undertaken during my undergraduate tenure:</p>
-
-							<div class="row">
-								<div class="col-6 col-12-mobile">
-									<article class="item">
-										<div class="inner-box" style="padding: 20px; background: rgba(0,0,0,0.03); border-radius: 8px; text-align: left; margin-bottom: 20px;">
-											<h3>Comparative Mammal Distribution Study (BIO3207)</h3>
-											<p><strong>Research:</strong> Distribution of Mammal Species in a Man-Made Ecosystem and a Natural Habitat: A Comparative Study of University Premises and Mihintale Sanctuary.</p>
-										</div>
-									</article>
-									<article class="item">
-										<div class="inner-box" style="padding: 20px; background: rgba(0,0,0,0.03); border-radius: 8px; text-align: left; margin-bottom: 20px;">
-											<h3>Pollinator Abundance & Diversity (BIO2302)</h3>
-											<p><strong>Group Project:</strong> Study of Diversity and Abundance in Pollinators within Two Selected Habitats in Mihintale Area and Their Correlation with Each Habitat Type.</p>
-										</div>
-									</article>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<article class="item">
-										<div class="inner-box" style="padding: 20px; background: rgba(0,0,0,0.03); border-radius: 8px; text-align: left; margin-bottom: 20px;">
-											<h3>Environmental Impact & Risk Assessment (BDC3202)</h3>
-											<p>Field impact study visits to the Mannar wind power plant and the Yan Oya reservoir.</p>
-										</div>
-									</article>
-									<article class="item">
-										<div class="inner-box" style="padding: 20px; background: rgba(0,0,0,0.03); border-radius: 8px; text-align: left; margin-bottom: 20px;">
-											<h3>Food Microbiology & Product Innovation (MIB3204)</h3>
-											<p><strong>Novel Product Invention:</strong> "Petal Crush" (a fermented drink group project). Authored a review paper on alternative protein sources and microbial applications.</p>
-										</div>
-									</article>
-								</div>
-							</div>
-
+					</div>
+					<div class="col-4">
+						<div class="item">
+							<h3>🧪 Lab & Taxidermy</h3>
+							<p>Taxidermy of larger mammals (fishing cat stuffing), skeleton mounting (Indian star tortoise), and entomological specimen sampling.</p>
 						</div>
-					</section>
+					</div>
+				</div>
+			</section>
 
-				<section id="leadership" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Leadership & Extracurricular Milestones</h2>
-							</header>
-
-							<div class="row" style="text-align: left;">
-								<div class="col-6 col-12-mobile">
-									<h3>👥 Clubs & Associations</h3>
-									<ul style="padding-left: 20px;">
-										<li><strong>InFocus Media Unit:</strong> Head of the Department of Human Resources. Awarded <em>Best HR Manager 2024</em> and <em>Most Outstanding Member of the Year 2024</em>.</li>
-										<li><strong>Zero Plastic Club:</strong> PR Team Member for "Through Nature's Eye" competition; volunteered for the Anuradhapura clean-up project.</li>
-										<li><strong>Gavel Club & Leo Club:</strong> Served as Delegate Coordinator for "Gavel Ekka Awurudu 2025" and joined the Mihintale Lake clean-up initiative.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-mobile">
-									<h3>🏐 Sports Accomplishments</h3>
-									<ul style="padding-left: 20px;">
-										<li><strong>Volleyball:</strong> Captain of the Rajarata University team for the Sri Lanka University Games (SLUG 2025). Vice-Captain at the Inter-University Games (2024).</li>
-										<li><strong>Hockey:</strong> University Team Member at SLUG 2025; finished as 1st Runner-Up in the Inter-Faculty Tournament 2025 (Team B Goalkeeper).</li>
-										<li><strong>Elle & Kabaddi:</strong> Active Inter-Faculty tournament competitor, securing 2nd Runner-Up honors in Elle (2024).</li>
-									</ul>
-								</div>
-							</div>
-
+			<section id="portfolio">
+				<h2>Research & Academic Projects</h2>
+				<p>A summary of research projects and technical evaluations undertaken during my undergraduate tenure:</p>
+				<div class="row">
+					<div class="col-6">
+						<div class="inner-box" style="margin-bottom:20px;">
+							<h3>Comparative Mammal Distribution Study (BIO3207)</h3>
+							<p><strong>Research:</strong> Distribution of Mammal Species in a Man-Made Ecosystem and a Natural Habitat: A Comparative Study of University Premises and Mihintale Sanctuary.</p>
 						</div>
-					</section>
-
-				<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Get In Touch</h2>
-							</header>
-
-							<p>If you're looking for a dedicated naturalist, field assistant, or collaborator for wildlife monitoring and conservation research, let's connect!</p>
-							
-							<div style="margin-top: 30px; text-align: center;">
-								<p>📍 <strong>Location:</strong> Department of Biological Sciences, Rajarata University of Sri Lanka, Mihintale</p>
-								<p>📧 <strong>Email:</strong> <a href="mailto:pabasaratharani@gmail.com">pabasaratharani@gmail.com</a></p>
-								<p>🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tharani-pabasara" target="_blank">linkedin.com/in/tharani-pabasara</a></p>
-							</div>
-
+						<div class="inner-box">
+							<h3>Pollinator Abundance & Diversity (BIO2302)</h3>
+							<p><strong>Group Project:</strong> Study of Diversity and Abundance in Pollinators within Two Selected Habitats in Mihintale Area and Their Correlation with Habitat Profiles.</p>
 						</div>
-					</section>
+					</div>
+					<div class="col-6">
+						<div class="inner-box" style="margin-bottom:20px;">
+							<h3>Environmental Impact Assessments (BDC3202)</h3>
+							<p>Field environmental impact assessment visits and logging tracking metrics for the Mannar wind power plant and the Yan Oya reservoir.</p>
+						</div>
+						<div class="inner-box">
+							<h3>Food Microbiology & Product Innovation (MIB3204)</h3>
+							<p><strong>Novel Product:</strong> "Petal Crush" (a fermented drink group project). Authored a comprehensive evaluation paper on alternative protein profiles and microbial applications.</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-			</div>
+			<section id="leadership">
+				<h2>Leadership & Extracurricular Milestones</h2>
+				<div class="row">
+					<div class="col-6">
+						<h3>👥 Clubs & Associations</h3>
+						<ul>
+							<li><strong>InFocus Media Unit:</strong> Department Head of Human Resources. Awarded <em>Best HR Manager 2024</em> and <em>Most Outstanding Member of the Year 2024</em>.</li>
+							<li><strong>Zero Plastic Club:</strong> Public Relations Team Member for "Through Nature's Eye" competition; volunteered for the Anuradhapura clean-up project.</li>
+							<li><strong>Gavel Club & Leo Club:</strong> Served as Delegate Coordinator for "Gavel Ekka Awurudu 2025" and joined the Mihintale Lake preservation initiative.</li>
+						</ul>
+					</div>
+					<div class="col-6">
+						<h3>🏐 Sports Accomplishments</h3>
+						<ul>
+							<li><strong>Volleyball:</strong> Captain of the Rajarata University team for the Sri Lanka University Games (SLUG 2025). Vice-Captain at the Inter-University Games (2024).</li>
+							<li><strong>Hockey:</strong> University Team Member at SLUG 2025; finished as 1st Runner-Up in the Inter-Faculty Tournament (Team B Goalkeeper).</li>
+							<li><strong>Elle & Kabaddi:</strong> Active Inter-Faculty tournament competitor, securing 2nd Runner-Up honors in Elle.</li>
+						</ul>
+					</div>
+				</div>
+			</section>
 
-		<div id="footer">
+			<section id="contact" style="background: #fff;">
+				<h2>Get In Touch</h2>
+				<p>If you're looking for a dedicated naturalist, field assistant, or collaborator for wildlife monitoring and conservation research, let's connect!</p>
+				<div style="margin-top: 30px; line-height: 2;">
+					📍 <strong>Location:</strong> Department of Biological Sciences, Rajarata University of Sri Lanka, Mihintale<br />
+					📧 <strong>Email:</strong> <a href="mailto:pabasaratharani@gmail.com">pabasaratharani@gmail.com</a><br />
+					🔗 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tharani-pabasara" target="_blank">linkedin.com/in/tharani-pabasara</a>
+				</div>
+			</section>
 
-				<ul class="copyright">
-						<li>&copy; 2026 Tharani Pabasara. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<script src="./assets/js/jquery.min.js"></script>
-			<script src="./assets/js/jquery.scrollex.min.js"></script>
-			<script src="./assets/js/jquery.scrolly.min.js"></script>
-			<script src="./assets/js/browser.min.js"></script>
-			<script src="./assets/js/breakpoints.min.js"></script>
-			<script src="./assets/js/util.js"></script>
-			<script src="./assets/js/main.js"></script>
-
+		</div>
 	</body>
 </html>
